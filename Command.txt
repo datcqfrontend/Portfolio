@@ -1,0 +1,38 @@
+****************************************************************
+#Create the App: 
+	$ cordova create hello com.example.hello HelloWorld
+hello: specifies a directory to be generated for your project.
+com.example.hello: provides your project with a reverse domain-style identifier.
+HelloWorld: provides the application's display title.
+
+#Add Platforms:
+    	$ cordova platform add ios
+    	$ cordova platform add amazon-fireos
+    	$ cordova platform add android
+    	$ cordova platform add blackberry10
+	$ cordova platform add firefoxos
+
+#Check Platforms: 
+	$ cordova platforms ls
+
+#Remove Platforms:
+	$ cordova platform remove blackberry10
+ 	$ cordova platform rm amazon-fireos
+    	$ cordova platform rm android
+
+#Build the App:
+	$ cordova build
+	$ cordova build ios
+
+#Build is short of:
+	$ cordova prepare ios
+	$ cordova compile ios
+
+#Test the App on an Emulator or Device
+	$cordova emulater android
+
+#Run in Android
+	$ adb devices
+	$ cordova run android
+****************************************************************
+
